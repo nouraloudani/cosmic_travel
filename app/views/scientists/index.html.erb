@@ -1,0 +1,9 @@
+<h1>Scientists Index Page</h1>
+
+<% @scientists.each do |scientist| %>
+    <h3><%= link_to scientist.name, scientist_path(scientist.id) %></h3>
+    <%= button_to "delete", scientist_path(scientist), method: :delete %>
+<% end %> 
+
+
+

@@ -1,0 +1,6 @@
+<h1>Scientist Show Page</h1>
+<h4><%= @scientist.name %></h4>
+
+<% @scientist.missions.each do |mission| %>
+<p><%= mission.name %> || Planet: <%= mission.planet.name %></p> 
+<% end %>
